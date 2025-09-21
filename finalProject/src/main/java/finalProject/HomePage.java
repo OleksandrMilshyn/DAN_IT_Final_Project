@@ -1,9 +1,6 @@
-import com.codeborne.selenide.Selenide;
+package finalProject;
+
 import com.codeborne.selenide.WebDriverRunner;
-
-import java.time.Duration;
-
-import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.switchTo;
 

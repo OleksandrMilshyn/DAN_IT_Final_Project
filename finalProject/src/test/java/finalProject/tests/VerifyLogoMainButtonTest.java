@@ -1,10 +1,15 @@
+package finalProject.tests;
+
+import finalProject.HomePage;
+import finalProject.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class VerifyLogoMainButtonTest extends BaseTest{
+public class VerifyLogoMainButtonTest extends BaseTest {
 
     @Test
     public void verifyLogoMainButton(){
+        testCaseId = 4;
 
         HomePage homePage = new HomePage();
         homePage.accountButton();
@@ -14,7 +19,5 @@ public class VerifyLogoMainButtonTest extends BaseTest{
         loginPage.logoTitle();
 
         Assert.assertTrue(homePage.verifyHomePage());
-
-
     }
 }
