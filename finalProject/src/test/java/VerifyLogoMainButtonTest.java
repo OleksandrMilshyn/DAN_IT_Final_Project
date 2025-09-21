@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 public class VerifyLogoMainButtonTest extends BaseTest{
 
     @Test
-    public void verifyLogoMainButtonTest(){
+    public void verifyLogoMainButton(){
 
         HomePage homePage = new HomePage();
         homePage.accountButton();
