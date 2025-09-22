@@ -12,8 +12,7 @@ public class VerifyLogoMainButtonTest extends BaseTest {
         testCaseId = 4;
 
         HomePage homePage = new HomePage();
-        homePage.accountButton();
-        homePage.enterButton();
+        homePage.clickAccountButton();
 
         LoginPage loginPage = new LoginPage();
         loginPage.logoTitle();

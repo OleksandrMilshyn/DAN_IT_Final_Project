@@ -13,7 +13,7 @@ public class VerifyFacebookButtonTest extends BaseTest{
         String expectedResultURL = "https://www.facebook.com/";
 
         HomePage homePage = new HomePage();
-        homePage.facebookButton();
+        homePage.clickFacebookButton();
 
         Assert.assertTrue(homePage.getCurrentURL().contains(expectedResultURL));
     }
