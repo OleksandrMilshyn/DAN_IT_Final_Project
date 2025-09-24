@@ -26,4 +26,8 @@ public class HomePage {
     public void clickEnglishLanguage(){$("[href='en']").click();}
 
     public String getLatestTitle(){return $("div.box-heading").getText();}
+
+    public void searchField(String searchWord){$("[name='search']").sendKeys(searchWord);}
+
+    public void clickSearchButton(){$("button.button-search").click();}
 }
