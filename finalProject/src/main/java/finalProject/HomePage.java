@@ -1,6 +1,13 @@
 package finalProject;
 
+import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
+
+import java.util.List;
+
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 public class HomePage {
@@ -30,4 +37,21 @@ public class HomePage {
     public void searchField(String searchWord){$("[name='search']").sendKeys(searchWord);}
 
     public void clickSearchButton(){$("button.button-search").click();}
+
+    public boolean verifyAllMainItemsWorks(){
+        for (int i = 0; i < 7; i++) {
+            SelenideElement itemSelector = $$("ul.menu.sf-js-enabled.sf-arrows>li").get(i);
+            String expectedTitle = itemSelector.getText();
+            itemSelector.click();
+
+            String actualTitle = $("#content").shouldBe(visible).getText();
+
+            if (!actualTitle.contains(expectedTitle)){
+                return false;
+            }
+
+            $("#logo").click();
+        }
+        return true;
+    }
 }
