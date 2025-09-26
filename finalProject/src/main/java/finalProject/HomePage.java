@@ -38,7 +38,7 @@ public class HomePage {
 
     public void clickSearchButton(){$("button.button-search").click();}
 
-    public boolean verifyAllMainItemsWorks(){
+    public boolean verifyAllMainItemsWorks(SelenideElement returnToTheHomePage){
         for (int i = 0; i < 7; i++) {
             SelenideElement itemSelector = $$("ul.menu.sf-js-enabled.sf-arrows>li").get(i);
             String expectedTitle = itemSelector.getText();
@@ -50,7 +50,7 @@ public class HomePage {
                 return false;
             }
 
-            $("#logo").click();
+            returnToTheHomePage.click();
         }
         return true;
     }
