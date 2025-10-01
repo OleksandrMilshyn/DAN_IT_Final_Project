@@ -54,4 +54,6 @@ public class HomePage {
         }
         return true;
     }
+
+    public void toProductPage(){$("a.lazy").click();}
 }
