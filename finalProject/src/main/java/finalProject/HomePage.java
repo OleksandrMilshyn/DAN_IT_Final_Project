@@ -56,4 +56,6 @@ public class HomePage {
     }
 
     public void toProductPage(){$("a.lazy").click();}
+
+    public String getPriceTheFirstLatestProduct(){return $("div.caption [class*=price]").getText();}
 }

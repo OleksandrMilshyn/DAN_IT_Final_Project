@@ -17,4 +17,6 @@ public class ProductPage {
 
     public void deleteFromCart(){$("[class='fa fa-times']").click();}
 
+    public String actualPriceProduct() {return $("span.price-new:nth-of-type(2)").getText();}
+
 }
