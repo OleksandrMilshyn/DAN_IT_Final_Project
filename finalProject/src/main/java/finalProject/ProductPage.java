@@ -19,4 +19,11 @@ public class ProductPage {
 
     public String actualPriceProduct() {return $("span.price-new:nth-of-type(2)").getText();}
 
+    public void addQuantityOfProduct(String number){$("[name*='quantity']").setValue(number);}
+
+    public void toCart(){
+        $("div.box-cart").click();
+        $("[class='btn btn-default']").click();
+    }
+
 }
