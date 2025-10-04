@@ -5,7 +5,7 @@ import java.util.Base64;
 import static io.restassured.RestAssured.given;
 
 public class TestRailController {
-    private static final String[] RUN_IDS = {"2","3"};
+    private static final String[] RUN_IDS = {"2", "3", "5"};
     private static final String BASE_API_URL = "https://scool123.testrail.io/index.php?/api/v2/";
     private static final String USER_EMAIL = "milshyn.ca@gmail.com";
     private static final String USER_PASSWORD = "hWWtUJm.m8ezSXgyDG/2-YZY5sD4Hfl8nUZPdS33n";
