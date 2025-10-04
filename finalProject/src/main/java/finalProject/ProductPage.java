@@ -26,4 +26,8 @@ public class ProductPage {
         $("[class='btn btn-default']").click();
     }
 
+    public void clickProductComparison(){$("button.btn.product-btn[onclick*=compare]").click();}
+
+    public String getTextAlertMassage(){return $("div.alert.alert-success").shouldBe(visible).getText();}
+
 }
