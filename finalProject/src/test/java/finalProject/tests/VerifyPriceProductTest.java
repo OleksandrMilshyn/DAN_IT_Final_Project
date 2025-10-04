@@ -17,6 +17,5 @@ public class VerifyPriceProductTest extends BaseTest{
         ProductPage productPage = new ProductPage();
 
         Assert.assertTrue(productPage.actualPriceProduct().equalsIgnoreCase(expectedPriceProduct));
-
     }
 }

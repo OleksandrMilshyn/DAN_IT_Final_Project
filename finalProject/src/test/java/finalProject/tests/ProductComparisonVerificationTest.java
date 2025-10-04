@@ -20,6 +20,5 @@ public class ProductComparisonVerificationTest extends BaseTest{
         productPage.clickProductComparison();
 
         Assert.assertTrue(productPage.getTextAlertMassage().contains(expectedSuccessMessage));
-
     }
 }

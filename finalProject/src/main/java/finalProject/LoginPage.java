@@ -1,5 +1,6 @@
 package finalProject;
 
+import com.codeborne.selenide.WebDriverRunner;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
@@ -20,4 +21,8 @@ public class LoginPage {
     public void clickEnterButton(){$("[type='submit']").click();}
 
     public String getTextAlertMassage(){return $("div.alert.alert-danger").shouldBe(visible).getText();}
+
+    public void clickAccountOnTheSideMenu(){$("div.box-content a[href*='route=account/account']").click();}
+
+    public String getUrlPage(){return WebDriverRunner.url();}
 }

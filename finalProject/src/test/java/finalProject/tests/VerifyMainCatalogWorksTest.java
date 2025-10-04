@@ -15,6 +15,5 @@ public class VerifyMainCatalogWorksTest extends BaseTest{
         CategoryPage categoryPage = new CategoryPage();
 
         Assert.assertTrue(homePage.verifyAllMainItemsWorks(categoryPage.mainLogo()));
-
     }
 }

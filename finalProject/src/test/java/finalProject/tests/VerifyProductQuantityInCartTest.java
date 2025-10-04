@@ -25,6 +25,5 @@ public class VerifyProductQuantityInCartTest extends BaseTest{
         CartPage cartPage = new CartPage();
 
         Assert.assertTrue(cartPage.getQuantityOfProduct().contains(expectedQuantityOfProduct));
-
     }
 }

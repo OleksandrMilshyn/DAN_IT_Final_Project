@@ -20,6 +20,5 @@ public class AddProductToCartTest extends BaseTest{
         productPage.addToCart();
 
         Assert.assertTrue(productPage.getCartQuantity().contains(expectedCartItemCount));
-
     }
 }

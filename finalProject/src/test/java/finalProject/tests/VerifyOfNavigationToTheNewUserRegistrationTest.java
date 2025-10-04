@@ -20,6 +20,5 @@ public class VerifyOfNavigationToTheNewUserRegistrationTest extends BaseTest{
         loginPage.clickButtonOfNewUserRegistration();
 
         Assert.assertTrue(loginPage.getTitle().equalsIgnoreCase(expectedTitle));
-
     }
 }
